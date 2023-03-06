@@ -63,3 +63,5 @@ class GetStartedPage extends StatelessWidget {
     );
   }
 }
+
+// Path: lib/ui/pages/home_page.dart
