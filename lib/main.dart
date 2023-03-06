@@ -1,4 +1,5 @@
 import 'package:my_app/ui/pages/get_started_page.dart';
+import 'package:my_app/ui/pages/sign_up_page.dart';
 import 'package:my_app/ui/pages/signin_page.dart';
 import 'package:flutter/material.dart';
 import 'package:my_app/ui/pages/splash_page.dart';
@@ -14,12 +15,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My App',
-      initialRoute: '/',
-      routes: {
-        '/': (context) => const SplashPage(),
-        '/get-started': (context) => const GetStartedPage(),
-        '/signin': (context) => const SignInPage(),
-      },
+      home: SignUpPage(),
+      // initialRoute: '/',
+      // routes: {
+      //   '/': (context) => SplashPage(),
+      //   '/get-started': (context) => GetStartedPage(),
+      //   '/signin': (context) => SignInPage(),
+      //   '/signup': (context) => SignUpPage(),
+      // },
     );
   }
 }
