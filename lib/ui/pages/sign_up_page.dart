@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:my_app/shared/theme.dart';
 import 'package:my_app/ui/widgets/custom_button.dart';
@@ -27,7 +28,7 @@ class SignUpPage extends StatelessWidget {
         return CustomTextFormField(
           title: 'Email Address',
           hintText: 'Your email address',
-          controller: nameController,
+          controller: emailController,
         );
       }
 
@@ -35,7 +36,7 @@ class SignUpPage extends StatelessWidget {
         return CustomTextFormField(
           title: 'Password',
           hintText: 'Your password',
-          controller: nameController,
+          controller: passwordController,
         );
       }
 
@@ -43,14 +44,19 @@ class SignUpPage extends StatelessWidget {
         return CustomTextFormField(
           title: 'Hobby',
           hintText: 'Your hobby',
-          controller: nameController,
+          controller: hobbyController,
         );
       }
 
       Widget submitButton() {
         return CustomButton(
           title: 'Get Started',
-          onPressed: () {},
+          onPressed: () {
+            final snackBar = const SnackBar(
+              content: Text('Yay! A SnackBar!'),
+            );
+            ScaffoldMessenger.of(context).showSnackBar(snackBar);
+          },
         );
       }
 

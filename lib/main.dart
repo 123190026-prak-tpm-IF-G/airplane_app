@@ -3,6 +3,7 @@ import 'package:my_app/ui/pages/sign_up_page.dart';
 import 'package:my_app/ui/pages/signin_page.dart';
 import 'package:flutter/material.dart';
 import 'package:my_app/ui/pages/splash_page.dart';
+import 'package:my_app/ui/pages/tourism_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,12 +16,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'My App',
-      home: SignUpPage(),
+      home: TourismPlacePage(),
       // initialRoute: '/',
       // routes: {
-      //   '/': (context) => SplashPage(),
-      //   '/get-started': (context) => GetStartedPage(),
-      //   '/signin': (context) => SignInPage(),
+      //   '/': (context) => const SplashPage(),
+      //   '/get-started': (context) => const GetStartedPage(),
+      //   '/signin': (context) => const SignInPage(),
       //   '/signup': (context) => SignUpPage(),
       // },
     );

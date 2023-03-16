@@ -1,46 +1,115 @@
 import 'package:flutter/material.dart';
 
-class SignInPage extends StatelessWidget {
-  const SignInPage({Key? key}) : super(key: key);
+class SignInPage extends StatefulWidget {
+  SignInPage({Key? key}) : super(key: key);
+
+  @override
+  _SignInPageState createState() => _SignInPageState();
+}
+
+class _SignInPageState extends State<SignInPage> {
+  String username = "";
+  String password = "";
+  bool isLoginSuccess = false;
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Sign In'),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            TextFormField(
-              decoration: const InputDecoration(
-                labelText: 'Email',
-                border: OutlineInputBorder(),
-              ),
-            ),
-            const SizedBox(height: 16.0),
-            TextFormField(
-              obscureText: true,
-              decoration: const InputDecoration(
-                labelText: 'Password',
-                border: OutlineInputBorder(),
-              ),
-            ),
-            const SizedBox(height: 16.0),
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text('Sign In'),
-            ),
-            const SizedBox(height: 16.0),
-            TextButton(
-              onPressed: () {},
-              child: const Text('Create an account'),
-            ),
-          ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("Login Page"),
         ),
+        body: Column(children: [
+          _usernameField(),
+          _passwordField(),
+          _loginButton(context),
+        ]),
+      ),
+    );
+  }
+
+  Widget _usernameField() {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      child: TextFormField(
+        enabled: true,
+        onChanged: (value) {
+          username = value;
+        },
+        decoration: InputDecoration(
+          hintText: 'Username',
+          contentPadding: const EdgeInsets.all(8.0),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(8.0)),
+            borderSide: BorderSide(color: Colors.blue),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(8.0)),
+            borderSide:
+                BorderSide(color: (isLoginSuccess) ? Colors.blue : Colors.red),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _passwordField() {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      child: TextFormField(
+        enabled: true,
+        obscureText: true,
+        onChanged: (value) {
+          password = value;
+        },
+        decoration: InputDecoration(
+          hintText: 'Password',
+          contentPadding: const EdgeInsets.all(8.0),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(8.0)),
+            borderSide: BorderSide(color: Colors.blue),
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.all(Radius.circular(8.0)),
+            borderSide:
+                BorderSide(color: (isLoginSuccess) ? Colors.blue : Colors.red),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _loginButton(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      width: MediaQuery.of(context).size.width,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          primary: (isLoginSuccess) ? Colors.blue : Colors.red, // background
+          onPrimary: Colors.white, // foreground
+        ),
+        onPressed: () {
+          String text = "";
+          if (username == "flutterMobile" && password == "flutter123") {
+            setState(() {
+              text = "Login Success";
+              isLoginSuccess = true;
+            });
+          } else {
+            setState(() {
+              text = "Login Failed";
+              isLoginSuccess = false;
+            });
+          }
+
+          print("isLoginSuccess : $isLoginSuccess");
+
+          SnackBar snackBar = SnackBar(
+            content: Text(text),
+          );
+          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        },
+        child: const Text('Login'),
       ),
     );
   }
