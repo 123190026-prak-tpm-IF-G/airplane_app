@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "471351226874",
+    "project_id": "airplane-89cf0",
+    "storage_bucket": "airplane-89cf0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471351226874:android:4e266c049159f0a656f443",
+        "android_client_info": {
+          "package_name": "com.anggitrestuu.airplane"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471351226874-d9lar68o109vmi39f0ph7i7he0i8rth2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2Khxa24JaovkQILL606RPP7Ysz5IAtzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471351226874-d9lar68o109vmi39f0ph7i7he0i8rth2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "471351226874-7s34icf7uv8dv3ci776ltccvc1c2i7o9.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.anggitrestuu.airplane"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
