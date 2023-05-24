@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:my_app/shared/theme.dart';
+import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatelessWidget {
   final String title;
@@ -18,14 +18,14 @@ class CustomTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(bottom: 20),
+      margin: EdgeInsets.only(bottom: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             title,
           ),
-          const SizedBox(
+          SizedBox(
             height: 6,
           ),
           TextFormField(
