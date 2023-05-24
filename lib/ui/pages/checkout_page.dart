@@ -1,9 +1,9 @@
-import 'package:airplane/cubit/auth_cubit.dart';
-import 'package:airplane/cubit/transaction_cubit.dart';
-import 'package:airplane/models/transaction_model.dart';
-import 'package:airplane/shared/theme.dart';
-import 'package:airplane/ui/widgets/booking_details_item.dart';
-import 'package:airplane/ui/widgets/custom_button.dart';
+import 'package:my_app/cubit/auth_cubit.dart';
+import 'package:my_app/cubit/transaction_cubit.dart';
+import 'package:my_app/models/transaction_model.dart';
+import 'package:my_app/shared/theme.dart';
+import 'package:my_app/ui/widgets/booking_details_item.dart';
+import 'package:my_app/ui/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';

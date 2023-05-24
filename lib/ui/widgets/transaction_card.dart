@@ -1,7 +1,7 @@
-import 'package:airplane/models/transaction_model.dart';
-import 'package:airplane/shared/theme.dart';
-import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:my_app/models/transaction_model.dart';
+import 'package:my_app/shared/theme.dart';
+import 'package:flutter/material.dart';
 
 import 'booking_details_item.dart';
 

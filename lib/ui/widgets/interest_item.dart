@@ -1,4 +1,4 @@
-import 'package:airplane/shared/theme.dart';
+import 'package:my_app/shared/theme.dart';
 import 'package:flutter/material.dart';
 
 class InterestItem extends StatelessWidget {

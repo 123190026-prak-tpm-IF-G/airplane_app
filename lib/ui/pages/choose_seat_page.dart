@@ -1,10 +1,10 @@
-import 'package:airplane/cubit/seat_cubit.dart';
-import 'package:airplane/models/destination_model.dart';
-import 'package:airplane/models/transaction_model.dart';
-import 'package:airplane/shared/theme.dart';
-import 'package:airplane/ui/pages/checkout_page.dart';
-import 'package:airplane/ui/widgets/custom_button.dart';
-import 'package:airplane/ui/widgets/seat_item.dart';
+import 'package:my_app/cubit/seat_cubit.dart';
+import 'package:my_app/models/destination_model.dart';
+import 'package:my_app/models/transaction_model.dart';
+import 'package:my_app/shared/theme.dart';
+import 'package:my_app/ui/pages/checkout_page.dart';
+import 'package:my_app/ui/widgets/custom_button.dart';
+import 'package:my_app/ui/widgets/seat_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';

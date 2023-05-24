@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:airplane/cubit/auth_cubit.dart';
+import 'package:my_app/cubit/auth_cubit.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../../shared/theme.dart';

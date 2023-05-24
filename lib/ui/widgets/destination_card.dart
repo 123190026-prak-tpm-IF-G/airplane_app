@@ -1,6 +1,7 @@
 import 'package:my_app/models/destination_model.dart';
 import 'package:my_app/shared/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:my_app/ui/pages/detail_page.dart';
 
 class DestinationCard extends StatelessWidget {
   final DestinationModel destination;

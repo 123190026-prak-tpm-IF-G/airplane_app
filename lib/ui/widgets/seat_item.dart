@@ -1,5 +1,5 @@
-import 'package:airplane/cubit/seat_cubit.dart';
-import 'package:airplane/shared/theme.dart';
+import 'package:my_app/cubit/seat_cubit.dart';
+import 'package:my_app/shared/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

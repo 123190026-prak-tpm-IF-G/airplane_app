@@ -1,10 +1,10 @@
-import 'package:airplane/models/destination_model.dart';
-import 'package:airplane/ui/pages/choose_seat_page.dart';
-import 'package:airplane/ui/widgets/custom_button.dart';
-import 'package:airplane/ui/widgets/interest_item.dart';
-import 'package:airplane/ui/widgets/photo_item.dart';
+import 'package:my_app/models/destination_model.dart';
+import 'package:my_app/ui/pages/choose_seat_page.dart';
+import 'package:my_app/ui/widgets/custom_button.dart';
+import 'package:my_app/ui/widgets/interest_item.dart';
+import 'package:my_app/ui/widgets/photo_item.dart';
 import 'package:flutter/material.dart';
-import 'package:airplane/shared/theme.dart';
+import 'package:my_app/shared/theme.dart';
 import 'package:intl/intl.dart';
 
 class DetailPage extends StatelessWidget {

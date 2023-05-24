@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/models/destination_model.dart';
+import 'package:my_app/shared/theme.dart';
+import 'package:my_app/ui/pages/detail_page.dart';
 
 class DestinationTile extends StatelessWidget {
   final DestinationModel destination;
